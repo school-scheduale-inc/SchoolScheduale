@@ -1,0 +1,30 @@
+#Always Call This File The Name Of The App Class With Lower Cases And Without The Word App
+#choose the Grid You Want To Use
+#for info on ids watch this - https://www.youtube.com/watch?v=H8aWfu9aICc&list=PLzMcBGfZo4-kSJVMyYeOQ8CXJ3z1k7gHn&index=5
+<MyGrid>:
+    #name the var email with the id email2
+    email: email2
+    #Create Grid Layout
+    GridLayout:
+        #Choose Number of Columns
+        cols:1
+        #Make It Full Screen
+        size: root.width, root.height
+        GridLayout:
+            cols:1
+            #make a Label
+            Label:
+                text: "School Scheduale"
+            #make a Text Input
+            TextInput:
+                #give the text Input the id of email2
+                multiline:False
+            #make A button
+            Button:
+                text:"Enter"
+                #bind a function to the button
+                on_press:root.click()
+
+
+
+
