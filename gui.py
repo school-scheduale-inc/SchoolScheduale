@@ -11,13 +11,13 @@ from kivy.properties import ObjectProperty
 
 
 
-class DailyScheduale(Widget):
+class DailySchedule(Widget):
     email = ObjectProperty(None)
 
 
 class MyApp(App):
     def build(self):
-        return DailyScheduale()
+        return DailySchedule()
 
 #Run App
 if __name__ == "__main__":
